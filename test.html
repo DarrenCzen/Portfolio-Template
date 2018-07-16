@@ -6,6 +6,16 @@
     </head>
     
     <body>
+
+        <div class="sidenav">
+            <a href="#aboutMe">About Me</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#skills">Services</a>
+            <a href="#media">Media</a>
+            <a href="#askMe">Ask Me</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
         <!-- header start -->
         <div id="header" class="section">
             <img alt="" class="img-circle" src="https://code.sololearn.com/Icons/Avatars/0.jpg">
@@ -14,7 +24,7 @@
         <!-- header end -->
         
         <!-- About Me section start -->
-        <div class="section">
+        <div id="aboutMe" class="section">
             <h1><span>About Me</span></h1>
             <div align = "center">
                     <a href="https://www.github.com/DarrenCzen" target="_blank"> <img alt="Github" src="Github-Mark-32px.png"/>
@@ -27,7 +37,7 @@
         <!-- About Me section end -->
         
         <!-- My Schedule section start -->
-        <div class="section">
+        <div id="schedule" class="section">
             <h1><span>My Coding Schedule</span></h1>
             <table>
                 <tr>
@@ -84,7 +94,7 @@
         
         
         <!-- My Skills section start -->
-        <div class="section">
+        <div id="skills" class="section">
             <h1><span>My Skills</span></h1>
             <ul>
                 <li>Java <br />
@@ -108,14 +118,37 @@
         
         
          <!-- Media section start -->
-        <div class="section">
+        <div id="media" class="section">
             <h1><span>My Media</span></h1>
             <iframe height="150" width="300" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe>
         </div>
         <!-- Media section end -->
+
+        <!-- test section start -->
+         <div class="section" style="text-align:center;">
+            <h1 id="mySwitch">Hello World!</h1>
+            <button onclick="displayResult()">Change text</button>
+            
+            <script>
+            
+            var switchFlag = 1;
+            
+            
+            function displayResult() {
+                if(switchFlag == 1){
+                    document.getElementById("mySwitch").innerHTML = "Have a nice day!";
+                    switchFlag = 2;
+                } else {
+                    document.getElementById("mySwitch").innerHTML = "Hello World!";
+                    switchFlag = 1;
+                }
+            }
+            </script>
+        </div>
+        <!-- test section end -->        
         
         <!-- Form section start -->
-       <div class="section">
+       <div id="askMe" class="section">
             <h1><span>Contact Me</span></h1>
             
             <svg class="face" height="100" width="100">
@@ -142,15 +175,15 @@
         <!-- Form section end -->
         
         <!-- Contacts section start -->
-        <div class="section" id="contacts">
+        <div id="contact" class="section" id="contacts" style="text-align:center;">
             <h1><span>Follow Me</span></h1>
             <div>
                 <!-- Opens the page in a new tab/window -->
                 <a href="https://www.facebook.com/" target="_blank">
-                    <img alt="Facebook" src="https://www.sololearn.com/Uploads/icons/facebook.png"/>
+                    <img alt="Facebook" src="https://www.sololearn.com/Uploads/icons/facebook.png" style="width:42px;height:42px;border:0;"/>
                 </a>
                 <a href="https://www.twitter.com/" target="_blank">
-                    <img alt="Twitter" src="https://www.sololearn.com/Uploads/icons/twitter.png" />
+                    <img alt="Twitter" src="https://www.sololearn.com/Uploads/icons/twitter.png" style="width:42px;height:42px;border:0;"/>
                 </a>
             </div>
         </div>
